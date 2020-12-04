@@ -9,6 +9,7 @@ module.exports = class Product {
     }
 
     save() {
+        this.id = Math.random().toString();
         products.push(this); // this will push all the elements that are in constructor to the products object
     }
 
